@@ -1,20 +1,9 @@
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./src/**/*.{html,js}", "./public/**/*.{html,js}"],
+
   media: false,
 
   theme: {
-    backgroundColor: (theme) => ({
-      ...theme("colors"),
-      primary: "#CC2D4A",
-      secondary: "#8FA206",
-      terciary: "#61AEC9",
-    }),
-    textcolor: (theme) => ({
-      ...theme("colors"),
-      primary: "#CC2D4A",
-      secondary: "#8FA206",
-      terciary: "#61AEC9",
-    }),
     extend: {
       backgroundImage: {
         sanFrancisco: "url('../img/sanFrancisco.jpg')",
@@ -30,6 +19,22 @@ module.exports = {
         europe: "url('../img/europe.jpg')",
         chicago: "url('../img/chicago.jpg')",
         bali: "url('../img/bali.jpg')",
+      },
+      backgroundColor: (theme) => ({
+        ...theme("colors"),
+        primary: "#CC2D4A",
+        secondary: "#8FA206",
+        terciary: "#61AEC9",
+      }),
+      textcolor: (theme) => ({
+        ...theme("colors"),
+        primary: "#CC2D4A",
+        secondary: "#8FA206",
+        terciary: "#61AEC9",
+      }),
+      fontFamily: {
+        Montserrat: ["Montserrat", "sans-serif"],
+        kalam: ["kalam"],
       },
     },
   },

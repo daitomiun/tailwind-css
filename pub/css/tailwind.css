@@ -467,3 +467,45 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+
+/* @font-face {
+  font-family: "Montserrat";
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+  src: local("Montserrat"),
+    url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap")
+      format("ttf");
+} */
+
+.h-64 {
+  height: 16rem;
+}
+
+.w-64 {
+  width: 16rem;
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(143 162 6 / var(--tw-bg-opacity));
+}
+
+.bg-sanFrancisco {
+  background-image: url('../img/sanFrancisco.jpg');
+}
+
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.font-Montserrat {
+  font-family: Montserrat, sans-serif;
+}
+
+.font-kalam {
+  font-family: kalam;
+}
