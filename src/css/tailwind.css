@@ -1,12 +1,22 @@
 @tailwind base;
 @tailwind components;
-
-/* @font-face {
-  font-family: "Montserrat";
-  src: url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-  src: local("Montserrat"),
-    url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap")
-      format("ttf");
-} */
-
 @tailwind utilities;
+
+.scroll-out {
+  display: -webkit-box;
+}
+
+.Card {
+  @apply w-48 h-64 shadow-md rounded-lg mx-8;
+}
+
+.image-cover {
+  @apply w-full h-3/5 rounded-t-lg bg-cover;
+}
+.description-cover {
+  @apply w-full h-2/5 rounded-b-lg px-4 py-2;
+}
+
+.recomendation-sect {
+  @apply flex overflow-x-scroll scroll-out p-10;
+}

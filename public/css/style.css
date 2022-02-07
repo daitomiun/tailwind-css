@@ -822,14 +822,6 @@ video {
   --tw-aspect-h: 16;
 }
 
-/* @font-face {
-  font-family: "Montserrat";
-  src: url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-  src: local("Montserrat"),
-    url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap")
-      format("ttf");
-} */
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -32645,6 +32637,46 @@ video {
 
 .content-none {
   content: none;
+}
+
+.scroll-out {
+  display: -webkit-box;
+}
+
+.Card {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  height: 16rem;
+  width: 12rem;
+  border-radius: 0.5rem;
+  --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.image-cover {
+  height: 60%;
+  width: 100%;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  background-size: cover;
+}
+
+.description-cover {
+  height: 40%;
+  width: 100%;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.recomendation-sect {
+  display: flex;
+  overflow-x: scroll;
+  padding: 2.5rem;
+  display: -webkit-box;
 }
 
 @media (min-width: 640px) {
