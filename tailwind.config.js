@@ -38,6 +38,10 @@ module.exports = {
       },
     },
   },
+  variants: {
+    width: ["responsive", "hover", "focus"],
+    extend: {},
+  },
   plugins: [require("@tailwindcss/forms")],
   plugins: [require("@tailwindcss/typography")],
   plugins: [require("@tailwindcss/aspect-ratio")],

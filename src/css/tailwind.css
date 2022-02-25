@@ -7,7 +7,10 @@
 }
 
 .Card {
-  @apply w-48 h-64 shadow-md rounded-lg mx-8;
+  @apply w-48 h-64 shadow-md rounded-lg mx-8 transform transition-all hover:-translate-y-4 hover:shadow-xl;
+}
+.title {
+  @apply font-semibold text-3xl pb-1;
 }
 
 .image-cover {
