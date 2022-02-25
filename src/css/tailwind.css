@@ -23,3 +23,32 @@
 .recomendation-sect {
   @apply flex overflow-x-scroll scroll-out p-10;
 }
+
+.dark {
+  color: white;
+  background-color: #111827;
+}
+
+.dark .drk-nav {
+  background-color: #1f2937;
+}
+
+.dark .drk-footer {
+  background-color: #374151;
+}
+
+.dark .drk-title {
+  color: white;
+}
+
+.dark .drk-card-green {
+  background-color: #374151;
+}
+
+.dark .drk-card-white {
+  background-color: #1f2937;
+}
+
+.dark .drk-card-white .drk-text {
+  color: white;
+}

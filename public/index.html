@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" class="css" />
+    <link rel="stylesheet" href="css/tailwind.css" class="css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,7 +14,36 @@
     <title>Platzi Travel</title>
   </head>
   <body class="font-Montserrat">
-    <nav></nav>
+    <nav class="drk-nav  w-full h-16 hidden bg-white lg:flex p-4 justify-between fixed z-40"> 
+      <div class="h-auto w-auto">
+        <p class="drk-title text-xl text-primary font-black">Platzi Travel</p>
+      </div>
+      <div class="flex space-x-8">
+        <a class="drk-title font-bold text-md text-primary" href="#home">Inicio</a>
+        <a class="drk-title font-bold text-md text-primary" href="#home">Recomendados</a>
+        <a class="drk-title font-bold text-md text-primary" href="#home">Rentas</a>
+        <a class="drk-title font-bold text-md text-primary" href="#home">FAQS</a>
+        <a class="drk-title font-bold text-md text-primary" href="#home">Sobre nosotros</a>
+
+      </div>
+      <div class="flex">
+        <a href="#home" class="pr-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+            <path class="fill-current text-gray-200" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+          </svg>
+        </a>
+        <button class="pr-2 " id="toggle" >  
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+            <path class="fill-current text-primary " d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+          </svg>
+        </button>
+        <a href="#" class="">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+            <path class="fill-current text-gray-200" fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+    </nav>
     <section class="w-full h-auto ">
       <div id="home">
         <div class="w-full h-3/4">
@@ -27,9 +56,9 @@
               id=""
             />
             <div class="hidden h-auto lg:w-2/5 lg:flex pb-6">
-              <p class="text-3xl ml-16 font-bold ">encuentra ubicaciones como esta</p>
+              <p class="text-3xl ml-16 font-bold text-gray-900">encuentra ubicaciones como esta</p>
             </div>
-            <button class="w-44 rounded-full text-xl text-primary shadow-sm bg-white font-semibold p-4  transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:translate-y-1 hover:scale-110 lg:ml-16 ">
+            <button  class="w-44 rounded-full text-xl text-primary shadow-sm bg-white font-semibold p-4  transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:translate-y-1 hover:scale-110 lg:ml-16 ">
               explorar
             </button>
           </div>
@@ -39,39 +68,39 @@
           </div>
         </div>
       </div>
-      <p class="text-3xl font-semibold text-primary px-10 py-10">Recomendados</p>
+      <p class="drk-title text-3xl font-semibold text-primary px-10 py-10">Recomendados</p>
       <div class="recomendation-sect" id="recomendation">
           <div class="Card" id="recomendation-card">
             <div class="image-cover bg-norway"></div>
-            <div class="description-cover bg-secondary">
+            <div class="drk-card-green description-cover bg-secondary">
               <p class="text-white text-bold text-xl">Norway</p>
               <p class="text-white text-md">Beatiful landscape</p>
             </div>
           </div>
           <div class="Card" id="recomendation-card">
             <div class="image-cover bg-newYork"></div>
-            <div class="description-cover bg-white">
-              <p class="text-gray-800 text-bold text-xl">New York</p>
-              <p class="text-gray-800 text-md">Concrete Jungle</p>
+            <div class="drk-card-white description-cover bg-white">
+              <p class="drk-text text-bold text-xl ">New York</p>
+              <p class="drk-text text-md ">Concrete Jungle</p>
             </div>
           </div>
           <div class="Card" id="recomendation-card">
             <div class="image-cover bg-seattle"></div>
-            <div class="description-cover bg-secondary">
+            <div class="drk-card-green description-cover bg-secondary">
               <p class="text-white text-bold text-xl">Seattle</p>
               <p class="text-white text-md">Big City</p>
             </div>
           </div>
           <div class="Card" id="recomendation-card">
             <div class="image-cover bg-switzerland"></div>
-            <div class="description-cover bg-white">
-              <p class="text-gray-800 text-bold text-xl">switzerland</p>
-              <p class="text-gray-800 text-md">Concrete Jungle</p>
+            <div class="drk-card-white description-cover bg-white">
+              <p class=" text-bold text-xl drk-text">switzerland</p>
+              <p class=" text-md drk-text">Concrete Jungle</p>
             </div>
           </div>
       </div>
       </div>
-      <p class="text-3xl font-semibold text-primary px-10 py-10">Rentas Destacadas</p>
+      <p class="drk-title text-3xl font-semibold text-primary px-10 py-10">Rentas Destacadas</p>
       <div id="rentas_destacadas" class="px-6 h-fit w-full">
         <div class="w-full h-fit flex flex-col space-y-4 items-center justify-center">
           <div class="w-full h-96 bg-chicago bg-cover rounded-lg py-10 px-5 lg:h-[38rem] lg:text-right lg:bg-center lg:pt-12">
@@ -97,16 +126,16 @@
       </div>
       <div id="faqs" class="w-full h-fit">
         <div class="w-full h-fit  px-6 flex flex-col space-y-4">
-          <p class="text-3xl text-primary font-extrabold py-7 mt-6">FAQS</p>
+          <p class="drk-title text-3xl text-primary font-extrabold py-7 mt-6">FAQS</p>
           <div>
-            <p class="text-3xl font-medium text-primary">Metodos de pago</p>
+            <p class="drk-title text-3xl font-medium text-primary">Metodos de pago</p>
             <p class="pt-2 pb-6">We accept VISA, MasterCard, American Express, Paypal and Binance, We accept VISA, MasterCard, American Express, Paypal and Binance.</p>
-            <p class="text-3xl font-medium text-primary">Metodos de cancelacion</p>
+            <p class="drk-title text-3xl font-medium text-primary">Metodos de cancelacion</p>
             <p class="pt-2 pb-6">We accept VISA, MasterCard, American Express, Paypal and Binance, We accept VISA, MasterCard, American Express, Paypal and Binance.</p>
           </div>
         </div>
       </div>
-      <footer class="w-full h-full bg-gray-50 p-6 space-y-2">
+      <footer class="drk-footer w-full h-full bg-gray-50 p-6 space-y-2">
         <p class="text-lg">Acerca de</p>
         <p class="text-sm text-gray-300">Acerca de</p>
         <p class="text-sm text-gray-300">Invesionistas</p>
@@ -115,7 +144,7 @@
         <p class="text-sm text-gray-300">Platzi Travel, Inc.</p>
       </footer>
     </section>
-    <div class="w-full h-fit bg-white flex justify-center fixed left-0 bottom-0 shadow-md lg:hidden" id="tab_bar">
+    <div class="drk-nav w-full h-fit bg-white flex justify-center fixed left-0 bottom-0 shadow-md lg:hidden" id="tab_bar">
       <a href="#recomendation" class="p-2">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
           <path class="fill-current text-gray-200" fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
@@ -131,16 +160,17 @@
           <path class="fill-current text-gray-200" d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
         </svg>
       </a>
-      <button class="p-2">
+      <button class="pr-2 " id="toggle-mobile" >  
         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
-          <path class="fill-current text-primary" d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+          <path class="fill-current text-primary " id="toggle" d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
         </svg>
       </button>
       <a href="#" class="p-2">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
-          <path class="fill-current text-gray-200" fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+          <path class="fill-current text-gray-300" fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
         </svg>
       </a>
     </div>
+    <script src="../public/js/modoNocturno.js"></script>
   </body>
 </html>

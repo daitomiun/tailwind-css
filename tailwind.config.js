@@ -1,5 +1,9 @@
 module.exports = {
-  content: ["./src/**/*.{html,js}", "./public/**/*.{html,js}"],
+  content: [
+    "./src/**/*.{html,js}",
+    "./public/**/*.{html,js}",
+    "./public/index.html",
+  ],
 
   media: false,
 
