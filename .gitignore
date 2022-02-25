@@ -1,1 +1,5 @@
 node_modules
+pub
+src
+package-lock.json
+package.json
